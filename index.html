@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Nexus — Next Generation Developer Platform</title>
+  <meta name="description" content="Nexus is an intelligent, edge-rendered developer platform designed to speed up workflows and build fast applications. Launching soon.">
+  <meta name="keywords" content="developer platform, web app, serverless, edge rendering, cloud hosting, AI assistant">
+  <meta name="author" content="Nexus Labs">
+  
+  <!-- Styling -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Floating Background Ambient Light Orbs -->
+  <div class="background-glow">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="container">
+    <a href="#" class="logo-wrapper" id="logo">
+      <div class="logo-icon">
+        <!-- Modern abstract N letter icon -->
+        <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" style="color: #fff;">
+          <polygon points="5 3 19 12 5 21 5 3"></polygon>
+        </svg>
+      </div>
+      <span class="logo-text">Nexus<span class="logo-dot">.</span></span>
+    </a>
+    <div class="badge" id="status-badge">
+      <span class="badge-dot"></span>
+      <span>V1.0 Early Access</span>
+    </div>
+  </header>
+
+  <!-- Hero & Content -->
+  <main class="container">
+    <section class="hero-grid">
+      
+      <!-- Left Hero Column -->
+      <div class="hero-left">
+        <span class="hero-tag">Coming Soon</span>
+        <h1 class="hero-title">The Future of Development is <span class="gradient-text">Nexus</span></h1>
+        <p class="hero-desc">
+          We are building an intelligent, edge-first deployment platform that optimizes your application delivery and boosts team velocity. Join the waitlist for exclusive early access.
+        </p>
+
+        <!-- Countdown Timer -->
+        <div class="countdown-container" id="countdown">
+          <div class="countdown-box" id="days-box">
+            <div class="countdown-value" id="days">00</div>
+            <div class="countdown-label">Days</div>
+          </div>
+          <div class="countdown-box" id="hours-box">
+            <div class="countdown-value" id="hours">00</div>
+            <div class="countdown-label">Hrs</div>
+          </div>
+          <div class="countdown-box" id="minutes-box">
+            <div class="countdown-value" id="minutes">00</div>
+            <div class="countdown-label">Min</div>
+          </div>
+          <div class="countdown-box" id="seconds-box">
+            <div class="countdown-value" id="seconds">00</div>
+            <div class="countdown-label">Sec</div>
+          </div>
+        </div>
+
+        <!-- Subscribe Form -->
+        <form class="subscribe-form" id="subscribe-form" novalidate>
+          <div class="input-group">
+            <input 
+              type="email" 
+              class="email-input" 
+              placeholder="Enter your professional email" 
+              required
+              aria-label="Email address"
+              id="email-input"
+            >
+            <button type="submit" class="submit-btn" id="submit-button">
+              <span class="submit-btn-text">Request Access</span>
+              <!-- Arrow Right Icon -->
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+              <div class="loader-spinner"></div>
+            </button>
+          </div>
+          <div class="form-feedback" id="form-feedback" role="alert"></div>
+        </form>
+      </div>
+
+      <!-- Right Features Column -->
+      <div class="hero-right">
+        <div class="features-container">
+          
+          <!-- Feature Card 1 -->
+          <div class="feature-card" id="feat-ai">
+            <div class="feature-icon-wrapper">
+              <!-- CPU/AI Icon -->
+              <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                <rect x="9" y="9" width="6" height="6"></rect>
+                <line x1="9" y1="1" x2="9" y2="4"></line>
+                <line x1="15" y1="1" x2="15" y2="4"></line>
+                <line x1="9" y1="20" x2="9" y2="23"></line>
+                <line x1="15" y1="20" x2="15" y2="23"></line>
+                <line x1="20" y1="9" x2="23" y2="9"></line>
+                <line x1="20" y1="15" x2="23" y2="15"></line>
+                <line x1="1" y1="9" x2="4" y2="9"></line>
+                <line x1="1" y1="15" x2="4" y2="15"></line>
+              </svg>
+            </div>
+            <div class="feature-text-wrapper">
+              <h3 class="feature-title">AI-Assisted Operations</h3>
+              <p class="feature-desc">Autonomous infrastructure scaling and self-healing deployments that learn from your user traffic spikes.</p>
+            </div>
+          </div>
+
+          <!-- Feature Card 2 -->
+          <div class="feature-card" id="feat-speed">
+            <div class="feature-icon-wrapper">
+              <!-- Zap / Energy Icon -->
+              <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <div class="feature-text-wrapper">
+              <h3 class="feature-title">Instant Global Delivery</h3>
+              <p class="feature-desc">Sub-millisecond latency at the edge with automatic multi-region database sync and CDN distribution.</p>
+            </div>
+          </div>
+
+          <!-- Feature Card 3 -->
+          <div class="feature-card" id="feat-security">
+            <div class="feature-icon-wrapper">
+              <!-- Shield Check Icon -->
+              <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <path d="m9 11 2 2 4-4"></path>
+              </svg>
+            </div>
+            <div class="feature-text-wrapper">
+              <h3 class="feature-title">Enterprise Shielding</h3>
+              <p class="feature-desc">Zero-trust developer environments, end-to-end encryption, and built-in continuous compliance checks.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="container">
+    <div class="footer-content">
+      <p class="copyright" id="copyright">&copy; 2026 Nexus Labs. All rights reserved.</p>
+      <div class="social-links">
+        
+        <!-- X/Twitter Link -->
+        <a href="#" class="social-link" aria-label="X / Twitter" id="social-x">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
+            <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
+          </svg>
+        </a>
+
+        <!-- GitHub Link -->
+        <a href="#" class="social-link" aria-label="GitHub" id="social-github">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+        </a>
+
+        <!-- LinkedIn Link -->
+        <a href="#" class="social-link" aria-label="LinkedIn" id="social-linkedin">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Logic Script -->
+  <script src="script.js"></script>
+</body>
+</html>
